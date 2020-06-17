@@ -68,6 +68,40 @@ body {
     }
 }
 
+.scroll-container {
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    height: 100vh;
+    scroll-snap-align: center;
+  }
+
+  section {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .content {
+    opacity: 0;
+  }
+  
+  section.is-visible .content {
+    opacity: 1;
+    transition: opacity 1000ms;
+  }
+
+section:nth-child(2n) {
+    background-color: white;
+}
+
+section:nth-child(3n) {
+    background-color: $favourite-pink;
+}
+
 .page-footer {
     position: fixed;
     bottom: 0;
