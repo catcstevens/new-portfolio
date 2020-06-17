@@ -1,6 +1,9 @@
 body {
-  padding: 0px;
-  background: #2c3539;
+  padding-top: 10px;
+  padding-bottom: 60px;
+  background: #35363A;
+  height: 100%;
+  margin: 0;
 }
 
 .wrapper {
@@ -12,112 +15,89 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100vh;
-  background: #2c3539;
+  background: #35363A;
 }
 
-.wrapper > * {
+.wrapper .wrapper > * {
   padding: 0px;
 }
 
-.page-main {
+.wrapper .page-main {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.white-nav ul {
+.wrapper .white-nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   list-style-type: none;
-  margin: 0;
+  margin: 20px;
 }
 
-.white-nav .header1 {
+.wrapper .white-nav .header1 {
   background-color: #ed217c;
 }
 
-.white-nav .header2 {
+.wrapper .white-nav .header2 {
   background-color: #ff0;
 }
 
-.white-nav .header3 {
+.wrapper .white-nav .header3 {
   background-color: #66ff99;
 }
 
-.white-nav .header4 {
+.wrapper .white-nav .header4 {
   background-color: #40e0d0;
 }
 
-.white-nav .buttons li {
+.wrapper .white-nav .buttons li {
   list-style: none;
   text-align: center;
-  margin-right: 30px;
   width: 150px;
-  line-height: 60px;
-  padding: 1px 4px;
+  line-height: 15px;
+  padding: 4px;
 }
 
-.white-nav li a {
-  color: white;
+.wrapper .white-nav li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #323648;
   font-size: 20px;
-  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
 }
 
-.container {
-  position: relative;
-  margin: 15px auto;
-}
-
-svg {
-  stroke: #5ac6ac;
-  fill: transparent;
-  stroke-width: 1;
-  stroke-dasharray: 250;
-  strok-dashoffset: -250;
-  font-size: 30px;
-  -webkit-transition: stroke-dashoffset .1s ease-out, fill 1s;
-  transition: stroke-dashoffset .1s ease-out, fill 1s;
-}
-
-.hover:hover svg {
-  stroke-dashoffest: 0;
-  -webkit-transition: stroke-dashoffset .1s ease-out, fill 1s;
-  transition: stroke-dashoffset .1s ease-out, fill 1s;
-  fill: #5ac6ac;
-  stroke: #5ac6ac;
-}
-
-.page-footer {
+.wrapper .page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  background: purple;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background: #ff0;
+  margin-bottom: 0;
+  margin-left: 0;
 }
 
-.page-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-.small-image {
+.wrapper .small-image {
   height: 40px;
   width: 40px;
 }
 
 @media screen and (min-width: 550px) {
-  .page-footer {
+  .wrapper .page-footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -129,7 +109,7 @@ svg {
         -ms-flex-align: center;
             align-items: center;
   }
-  .small-image {
+  .wrapper .small-image {
     height: 40px;
     width: 40px;
   }
@@ -283,5 +263,69 @@ img {
     height: 40px;
     width: 40px;
   }
+}
+
+svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.writing {
+  font-family: 'Sriracha', cursive;
+  fill: none;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-dasharray: 70 20;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 15s infinite linear;
+  animation: stroke 15s infinite linear;
+}
+
+.writing:nth-child(4n + 1) {
+  stroke: #66FF99;
+  -webkit-animation-delay: -3.75s;
+  animation-delay: -3.75s;
+}
+
+.writing:nth-child(4n + 2) {
+  stroke: #40E0D0;
+  -webkit-animation-delay: -7.5s;
+  animation-delay: -7.5s;
+}
+
+.writing:nth-child(4n + 3) {
+  stroke: #ed217c;
+  -webkit-animation-delay: -11.25s;
+  animation-delay: -11.25s;
+}
+
+.writing:nth-child(4n + 4) {
+  stroke: #FF0;
+  -webkit-animation-delay: -15s;
+  animation-delay: -15s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -320;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -320;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #35363A;
+  background-size: .2em 100%;
+  font: 6em/1 Open Sans, Impact;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */
