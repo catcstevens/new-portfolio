@@ -1,13 +1,12 @@
 
 $colours:  #66FF99, #40E0D0, #ed217c, #FF0;
 $background: #35363A;
-$max: length($colours);
+$max: 4;
 $dash: 70;
 $dash-gap: 10;
 $dash-space: 20;
-// $dash * (max -1) + $dash-gap * $max;
-$time: 15s;
-$time-step: $time/$max;
+$time: 8s;
+$time-step: 3;
 
 svg {
     position: absolute;
@@ -16,7 +15,7 @@ svg {
   }
 
 .writing {
- font-family: 'Sriracha', cursive;
+//  font-family: 'Sriracha', cursive;
   fill: none;
   stroke-width: 3;
   stroke-linejoin: round;
@@ -24,7 +23,7 @@ svg {
   stroke-dashoffset: 0;
   -webkit-animation: stroke $time infinite linear;
   animation: stroke $time infinite linear;
-  
+
   @for $hue from 1 through $max {
     &:nth-child(#{$max}n + #{$hue}) {
       $colour: nth($colours, $hue);
@@ -34,6 +33,8 @@ svg {
     }
   }
 }
+
+
 
 @-webkit-keyframes stroke {
   100% {
@@ -53,7 +54,7 @@ html, body {
   body {
     background: $background;
     background-size: .2em 100%;
-    font: 6em/1 Open Sans, Impact;
+    font: 6em/1 'Sriracha', cursive;
     text-transform: uppercase;
     
   }

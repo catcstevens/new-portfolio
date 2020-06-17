@@ -115,6 +115,10 @@ body {
   }
 }
 
+#about {
+  background-color: white;
+}
+
 .main-heading {
   font-size: 40px;
   color: #ed217c;
@@ -272,38 +276,37 @@ svg {
 }
 
 .writing {
-  font-family: 'Sriracha', cursive;
   fill: none;
   stroke-width: 3;
   stroke-linejoin: round;
   stroke-dasharray: 70 20;
   stroke-dashoffset: 0;
-  -webkit-animation: stroke 15s infinite linear;
-  animation: stroke 15s infinite linear;
+  -webkit-animation: stroke 8s infinite linear;
+  animation: stroke 8s infinite linear;
 }
 
 .writing:nth-child(4n + 1) {
   stroke: #66FF99;
-  -webkit-animation-delay: -3.75s;
-  animation-delay: -3.75s;
+  -webkit-animation-delay: -3;
+  animation-delay: -3;
 }
 
 .writing:nth-child(4n + 2) {
   stroke: #40E0D0;
-  -webkit-animation-delay: -7.5s;
-  animation-delay: -7.5s;
+  -webkit-animation-delay: -6;
+  animation-delay: -6;
 }
 
 .writing:nth-child(4n + 3) {
   stroke: #ed217c;
-  -webkit-animation-delay: -11.25s;
-  animation-delay: -11.25s;
+  -webkit-animation-delay: -9;
+  animation-delay: -9;
 }
 
 .writing:nth-child(4n + 4) {
   stroke: #FF0;
-  -webkit-animation-delay: -15s;
-  animation-delay: -15s;
+  -webkit-animation-delay: -12;
+  animation-delay: -12;
 }
 
 @-webkit-keyframes stroke {
@@ -325,7 +328,7 @@ html, body {
 body {
   background: #35363A;
   background-size: .2em 100%;
-  font: 6em/1 Open Sans, Impact;
+  font: 6em/1 'Sriracha', cursive;
   text-transform: uppercase;
 }
 /*# sourceMappingURL=styles.css.map */
