@@ -81,10 +81,6 @@ body {
     padding: 1rem;
     display: flex;
   }   
-
-// section .content {
-//     opacity: 0;
-//   }
   
   section.is-visible .content {
     opacity: 1;
@@ -95,7 +91,7 @@ section:nth-child(3) {
     background-color: $favourite-pink;
 }   
 // }
-// section:nth-child(3n) {
+// section:nth-child(5n) {
 //     background-color: $favourite-pink;
     
 // }
