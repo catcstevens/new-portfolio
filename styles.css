@@ -329,19 +329,19 @@ svg {
   animation: stroke 8s infinite linear;
 }
 
-.writing:nth-child(4n + 1) {
+.writing:nth-child(1n + 1) {
   stroke: #66FF99;
   -webkit-animation-delay: -3;
   animation-delay: -3;
 }
 
-.writing:nth-child(4n + 2) {
+.writing:nth-child(2n + 2) {
   stroke: #40E0D0;
   -webkit-animation-delay: -6;
   animation-delay: -6;
 }
 
-.writing:nth-child(4n + 3) {
+.writing:nth-child(3n + 3) {
   stroke: #ed217c;
   -webkit-animation-delay: -9;
   animation-delay: -9;

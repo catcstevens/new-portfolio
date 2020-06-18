@@ -1,5 +1,5 @@
 
-$colours:  #66FF99, #40E0D0, #ed217c, #FF0;
+$colours: #66FF99, #40E0D0, #ed217c, #FF0 ;
 $background: #35363A;
 $max: 4;
 $dash: 70;
@@ -24,12 +24,13 @@ svg {
   -webkit-animation: stroke $time infinite linear;
   animation: stroke $time infinite linear;
 
-  @for $hue from 1 through $max {
-    &:nth-child(#{$max}n + #{$hue}) {
-      $colour: nth($colours, $hue);
+
+  @for $index from 1 through $max {
+    &:nth-child(#{$index}n + #{$index}) {
+      $colour: nth($colours, $index);
       stroke: $colour;
-      -webkit-animation-delay: -($time-step * $hue);
-      animation-delay: -($time-step * $hue);
+      -webkit-animation-delay: -($time-step * $index);
+      animation-delay: -($time-step * $index);
     }
   }
 }
