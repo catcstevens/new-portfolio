@@ -94,9 +94,9 @@ section .content {
     transition: opacity 1000ms;
   }
 
-section:nth-child(2n) {
-    background-color: white;
-}
+// section:nth-child(2n) {
+//     background-color: white;
+// }
 
 section:nth-child(3n) {
     background-color: $favourite-pink;
