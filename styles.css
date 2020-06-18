@@ -110,10 +110,6 @@ body {
   transition: opacity 1000ms;
 }
 
-.wrapper section:nth-child(2n) {
-  background-color: white;
-}
-
 .wrapper section:nth-child(3n) {
   background-color: #ed217c;
 }
@@ -319,49 +315,49 @@ svg {
   height: 100%;
 }
 
-.writing {
+text {
   fill: none;
   stroke-width: 3;
   stroke-linejoin: round;
-  stroke-dasharray: 70 20;
+  stroke-dasharray: 50 30;
   stroke-dashoffset: 0;
   -webkit-animation: stroke 8s infinite linear;
   animation: stroke 8s infinite linear;
 }
 
-.writing:nth-child(1n + 1) {
+text:nth-child(1) {
   stroke: #66FF99;
-  -webkit-animation-delay: -3;
-  animation-delay: -3;
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
 }
 
-.writing:nth-child(2n + 2) {
+text:nth-child(2) {
   stroke: #40E0D0;
-  -webkit-animation-delay: -6;
-  animation-delay: -6;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
 }
 
-.writing:nth-child(3n + 3) {
+text:nth-child(3) {
   stroke: #ed217c;
-  -webkit-animation-delay: -9;
-  animation-delay: -9;
+  -webkit-animation-delay: -9s;
+  animation-delay: -9s;
 }
 
-.writing:nth-child(4n + 4) {
+text:nth-child(4) {
   stroke: #FF0;
-  -webkit-animation-delay: -12;
-  animation-delay: -12;
+  -webkit-animation-delay: -12s;
+  animation-delay: -12s;
 }
 
 @-webkit-keyframes stroke {
   100% {
-    stroke-dashoffset: -320;
+    stroke-dashoffset: -240;
   }
 }
 
 @keyframes stroke {
   100% {
-    stroke-dashoffset: -320;
+    stroke-dashoffset: -240;
   }
 }
 

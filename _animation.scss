@@ -2,11 +2,11 @@
 $colours: #66FF99, #40E0D0, #ed217c, #FF0 ;
 $background: #35363A;
 $max: 4;
-$dash: 70;
+$dash: 50;
 $dash-gap: 10;
-$dash-space: 20;
+$dash-space:30;
 $time: 8s;
-$time-step: 3;
+$time-step: 3s;
 
 svg {
     position: sticky;
@@ -14,7 +14,7 @@ svg {
     height: 100%;
   }
 
-.writing {
+text {
 //  font-family: 'Sriracha', cursive;
   fill: none;
   stroke-width: 3;
@@ -24,13 +24,12 @@ svg {
   -webkit-animation: stroke $time infinite linear;
   animation: stroke $time infinite linear;
 
-
-  @for $index from 1 through $max {
-    &:nth-child(#{$index}n + #{$index}) {
-      $colour: nth($colours, $index);
+  @for $hue from 1 through $max {
+    &:nth-child(#{$hue}) {
+      $colour: nth($colours, $hue);
       stroke: $colour;
-      -webkit-animation-delay: -($time-step * $index);
-      animation-delay: -($time-step * $index);
+      -webkit-animation-delay: -#{$time-step * $hue};
+      animation-delay: -#{$time-step * $hue};
     }
   }
 }
