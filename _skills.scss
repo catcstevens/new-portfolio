@@ -1,6 +1,7 @@
 
 #skill-section {
     display: flex;
+    background-color: white;
 
 }
 
@@ -16,6 +17,7 @@ h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-content: space-around;
+    background-color: white;
    
  }
 
@@ -24,20 +26,19 @@ h2 {
         width: 120px;
         border: 20px;
         padding: 20px;
+        background-color: white;
         }
 
 @media screen and (max-width: 550px) {
     .tech-icons {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     }
 
     .iconify {
     height: 80px;
     width: 80px;
     border: 10px;
-    // justify-self: space-between;
     }
 }
