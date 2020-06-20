@@ -5,9 +5,13 @@
 
 }
 
-h2 {
-    font: 2em sans-serif;
-}
+.vertical-text1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px;
+    // align-self: center;
+  }
     
 
 .tech-icons {

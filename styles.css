@@ -279,8 +279,13 @@ text:nth-child(4) {
   background-color: white;
 }
 
-h2 {
-  font: 2em sans-serif;
+.vertical-text1 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
 }
 
 .tech-icons {
@@ -543,9 +548,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .projects {
@@ -568,6 +570,19 @@ body {
   margin: 40px;
 }
 
+.vertical-text2 {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 0;
+}
+
 .projects img {
   height: 320px;
   width: 320px;
@@ -585,6 +600,11 @@ p {
 }
 
 @media screen and (max-width: 550px) {
+  .vertical-text2 {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
   h3 {
     font-size: 1em;
   }
