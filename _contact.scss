@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: flex-start;
     flex-wrap: wrap;
-    // background-color: $favourite-green;
     padding-bottom:100px;
     background-color: white;
     
@@ -21,7 +20,6 @@
     padding: 40px;
     background: white;
     margin: 40px;
-    // justify-content: space-between;
 
 h3 {
     font-family: 'Source Code Pro', monospace;
@@ -32,13 +30,11 @@ h3 {
 img {
     height: 80px;
     width: 80px;  
-    // margin: 20px;
-    // padding: 10px;
-  
+    
   }
 
   a:hover {
-    color: $favourite-yellow;
+    color: $favourite-pink;
   }
 
   a {

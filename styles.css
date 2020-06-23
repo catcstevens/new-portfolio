@@ -526,7 +526,7 @@ body {
 }
 
 .contact-me a:hover {
-  color: #ff0;
+  color: #ed217c;
 }
 
 .contact-me a {
@@ -562,7 +562,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 420px;
+  height: 440px;
   width: 420px;
   border: 2px solid #000;
   padding: 40px;
@@ -591,6 +591,7 @@ body {
 h3 {
   font-family: 'Source Code Pro', monospace;
   margin-top: 0;
+  text-decoration: none;
 }
 
 p {
